@@ -4,7 +4,7 @@ from scipy.optimize import minimize_scalar
 def f(x):
     return math.cos(math.log(x))
 
-def ddf(x):
+def ddf(x): # вторая производная
     return -(math.cos(math.log(x)) - math.sin(math.log(x)))/x**2
 a, b = 1, 3  # границы интервала
 n = 100      # число интервалов (шагов сетки)
