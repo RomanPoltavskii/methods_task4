@@ -5,7 +5,7 @@ def f(x):
     return math.cos(math.log(x))
 
 def ddf(x):
-    return - (math.sin(math.log(x)))/x
+    return -(math.cos(math.log(x)) - math.sin(math.log(x)))/x**2
 a, b = 1, 3  # границы интервала
 n = 100      # число интервалов (шагов сетки)
 
